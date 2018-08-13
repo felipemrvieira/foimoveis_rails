@@ -1,0 +1,472 @@
+<div class="corpo col-md-12">
+  <aside id="side-menu" class="col-md-3">
+    <a href="#"><img class="center-block tamanhomaximo" id="logo" src="img/logo2.png"></a>
+    <img class="" id="banner1-aside" src="img/elemento.png">
+    <div class="col-md-12" id="filtro">
+      <div class="col-xs-2 col-md-2 labelselect">
+          Valor:
+      </div>
+      <div id="valor" class="col-md-10">
+          <p>R$ 100.000 à</p>
+          <output class="" for="fader" id="volume">R$ 100.000</output>
+      </div>
+      <div class="col-md-12">
+        <input type="range" min="500" max="4000000" value="100000" id="fader" name="valmax" step="100" oninput="outputUpdate(value)">
+      </div>
+
+      <div class="col-xs-12 col-md-6 form-group">
+        <label class=" labelselect" for="qto">Quartos:</label>
+        <select name="qto" class="selectfiltro form-control " id="qto">
+          <option value="0">Sem quarto(Terreno)</option>
+          <option value="1">1 Quarto</option>
+          <option value="2">2 Quartos</option>
+          <option value="3">3 Quartos</option>
+          <option value="4">4 Quartos</option>
+          <option value="5">5 Quartos</option>
+        </select>
+      </div>
+
+      <div class="col-xs-12 col-md-6 form-group">
+        <label class=" labelselect" for="bairro">Bairro:</label>
+        <select class="selectfiltro form-control " id="bairro" name="bairro">
+          <option>Ponta verde</option>
+          <option>Jatiúca</option>
+        </select>
+      </div>
+
+      <div class="col-xs-12 col-md-12 check-imovel ">
+
+        <label class="checkbox-inline">
+          <input type="checkbox" name="piscina" value="s">
+            Piscina
+        </label>
+        <label class="checkbox-inline">
+          <input type="checkbox" name="salao" value="s">
+            Salão de festas
+        </label>
+        <label class="checkbox-inline">
+          <input type="checkbox" name="academia" value="s">
+            Academia
+        </label>
+
+      </div>
+
+      <div class="col-xs-12 col-md-12" id="botao-filtro-container">
+        <div class="col-md-6 ">
+        </div>
+        <div class="col-md-6">
+            <div class="form-group">
+              <button type="" class="btnbuscar btn btn-block">Buscar</button>
+            </div>
+        </div>
+      </div>
+
+    </div> <!-- Filtro -->
+    <hr>
+    <div class="col-md-12 calendar-area">
+      <div id="calendario" class="col-md-4">
+        <img class="img-responsive" src="img/calendario.png">
+      </div>
+      <div class="col-md-8 sempadding">
+        <img class="img-responsive" src="img/descontosimperdiveis.png">
+      </div>
+    </div>
+    <hr>
+    <div class="col-md-12 btn-corretor-container">
+        <div class="form-group">
+          <button type="" class="btn-corretor btn btn-block">
+            <p class="">FALE AGORA COM CORRETOR</p>
+            <p class="">CHAT AO VIVO</p>
+          </button>
+        </div>
+    </div>
+  </aside>
+
+    <!-- coluna 9 direita-->
+  <main id="anuncios" class="col-md-9" >
+
+    <!-- anuncio individual-->
+    <div class="col-md-4 anuncio-container">
+        <div class="grow">
+            <a href="detalheimovel.html">
+              <img class="img-anuncio" src="http://1.bp.blogspot.com/_zZSxcEzfHMc/THr5RAlM9ZI/AAAAAAAAAIs/UfNNqXmxMvw/s1600/PREDIO1.jpg" alt="portrait">
+              <div class="legenda">
+                <div>
+                  <img src="img/elementolegenda.png">
+                </div>
+
+                <div class="txt-imovel-container">
+                  <div class="tipo">Residencial</div>
+                  <div class="nome">Premiatto</div>
+                </div>
+
+              </div>
+
+              <div class="oferta">
+                <div class="desconto-oferta">10%</div>
+                <div class="legenda-oferta">de desconto</div>
+                <div class="botao-oferta center-block">Clique aqui e saiba mais!</div>
+              </div>
+            </a>
+        </div>
+    </div>
+    <!-- anuncio individual-->
+    <!-- anuncio individual-->
+    <div class="col-md-4 anuncio-container">
+        <div class="grow">
+            <a href="detalheimovel.html">
+              <img class="img-anuncio" src="http://1.bp.blogspot.com/_zZSxcEzfHMc/THr5RAlM9ZI/AAAAAAAAAIs/UfNNqXmxMvw/s1600/PREDIO1.jpg" alt="portrait">
+              <div class="legenda">
+                <div>
+                  <img src="img/elementolegenda.png">
+                </div>
+
+                <div class="txt-imovel-container">
+                  <div class="tipo">Residencial</div>
+                  <div class="nome">Premiatto</div>
+                </div>
+
+              </div>
+
+              <div class="oferta">
+                <div class="desconto-oferta">10%</div>
+                <div class="legenda-oferta">de desconto</div>
+                <div class="botao-oferta center-block">Clique aqui e saiba mais!</div>
+              </div>
+            </a>
+        </div>
+    </div>
+    <!-- anuncio individual-->
+    <!-- anuncio individual-->
+    <div class="col-md-4 anuncio-container">
+        <div class="grow">
+            <a href="detalheimovel.html">
+              <img class="img-anuncio" src="http://1.bp.blogspot.com/_zZSxcEzfHMc/THr5RAlM9ZI/AAAAAAAAAIs/UfNNqXmxMvw/s1600/PREDIO1.jpg" alt="portrait">
+              <div class="legenda">
+                <div>
+                  <img src="img/elementolegenda.png">
+                </div>
+
+                <div class="txt-imovel-container">
+                  <div class="tipo">Residencial</div>
+                  <div class="nome">Premiatto</div>
+                </div>
+
+              </div>
+
+              <div class="oferta">
+                <div class="desconto-oferta">10%</div>
+                <div class="legenda-oferta">de desconto</div>
+                <div class="botao-oferta center-block">Clique aqui e saiba mais!</div>
+              </div>
+            </a>
+        </div>
+    </div>
+    <!-- anuncio individual-->
+    <!-- anuncio individual-->
+    <div class="col-md-4 anuncio-container">
+        <div class="grow">
+            <a href="detalheimovel.html">
+              <img class="img-anuncio" src="http://1.bp.blogspot.com/_zZSxcEzfHMc/THr5RAlM9ZI/AAAAAAAAAIs/UfNNqXmxMvw/s1600/PREDIO1.jpg" alt="portrait">
+              <div class="legenda">
+                <div>
+                  <img src="img/elementolegenda.png">
+                </div>
+
+                <div class="txt-imovel-container">
+                  <div class="tipo">Residencial</div>
+                  <div class="nome">Premiatto</div>
+                </div>
+
+              </div>
+
+              <div class="oferta">
+                <div class="desconto-oferta">10%</div>
+                <div class="legenda-oferta">de desconto</div>
+                <div class="botao-oferta center-block">Clique aqui e saiba mais!</div>
+              </div>
+            </a>
+        </div>
+    </div>
+    <!-- anuncio individual-->
+    <!-- anuncio individual-->
+    <div class="col-md-4 anuncio-container">
+        <div class="grow">
+            <a href="detalheimovel.html">
+              <img class="img-anuncio" src="http://1.bp.blogspot.com/_zZSxcEzfHMc/THr5RAlM9ZI/AAAAAAAAAIs/UfNNqXmxMvw/s1600/PREDIO1.jpg" alt="portrait">
+              <div class="legenda">
+                <div>
+                  <img src="img/elementolegenda.png">
+                </div>
+
+                <div class="txt-imovel-container">
+                  <div class="tipo">Residencial</div>
+                  <div class="nome">Premiatto</div>
+                </div>
+
+              </div>
+
+              <div class="oferta">
+                <div class="desconto-oferta">10%</div>
+                <div class="legenda-oferta">de desconto</div>
+                <div class="botao-oferta center-block">Clique aqui e saiba mais!</div>
+              </div>
+            </a>
+        </div>
+    </div>
+    <!-- anuncio individual-->
+    <!-- anuncio individual-->
+    <div class="col-md-4 anuncio-container">
+        <div class="grow">
+            <a href="detalheimovel.html">
+              <img class="img-anuncio" src="http://1.bp.blogspot.com/_zZSxcEzfHMc/THr5RAlM9ZI/AAAAAAAAAIs/UfNNqXmxMvw/s1600/PREDIO1.jpg" alt="portrait">
+              <div class="legenda">
+                <div>
+                  <img src="img/elementolegenda.png">
+                </div>
+
+                <div class="txt-imovel-container">
+                  <div class="tipo">Residencial</div>
+                  <div class="nome">Premiatto</div>
+                </div>
+
+              </div>
+
+              <div class="oferta">
+                <div class="desconto-oferta">10%</div>
+                <div class="legenda-oferta">de desconto</div>
+                <div class="botao-oferta center-block">Clique aqui e saiba mais!</div>
+              </div>
+            </a>
+        </div>
+    </div>
+    <!-- anuncio individual-->
+    <!-- anuncio individual-->
+    <div class="col-md-4 anuncio-container">
+        <div class="grow">
+            <a href="detalheimovel.html">
+              <img class="img-anuncio" src="http://1.bp.blogspot.com/_zZSxcEzfHMc/THr5RAlM9ZI/AAAAAAAAAIs/UfNNqXmxMvw/s1600/PREDIO1.jpg" alt="portrait">
+              <div class="legenda">
+                <div>
+                  <img src="img/elementolegenda.png">
+                </div>
+
+                <div class="txt-imovel-container">
+                  <div class="tipo">Residencial</div>
+                  <div class="nome">Premiatto</div>
+                </div>
+
+              </div>
+
+              <div class="oferta">
+                <div class="desconto-oferta">10%</div>
+                <div class="legenda-oferta">de desconto</div>
+                <div class="botao-oferta center-block">Clique aqui e saiba mais!</div>
+              </div>
+            </a>
+        </div>
+    </div>
+    <!-- anuncio individual-->
+    <!-- anuncio individual-->
+    <div class="col-md-4 anuncio-container">
+        <div class="grow">
+            <a href="detalheimovel.html">
+              <img class="img-anuncio" src="http://1.bp.blogspot.com/_zZSxcEzfHMc/THr5RAlM9ZI/AAAAAAAAAIs/UfNNqXmxMvw/s1600/PREDIO1.jpg" alt="portrait">
+              <div class="legenda">
+                <div>
+                  <img src="img/elementolegenda.png">
+                </div>
+
+                <div class="txt-imovel-container">
+                  <div class="tipo">Residencial</div>
+                  <div class="nome">Premiatto</div>
+                </div>
+
+              </div>
+
+              <div class="oferta">
+                <div class="desconto-oferta">10%</div>
+                <div class="legenda-oferta">de desconto</div>
+                <div class="botao-oferta center-block">Clique aqui e saiba mais!</div>
+              </div>
+            </a>
+        </div>
+    </div>
+    <!-- anuncio individual-->
+    <!-- anuncio individual-->
+    <div class="col-md-4 anuncio-container">
+        <div class="grow">
+            <a href="detalheimovel.html">
+              <img class="img-anuncio" src="http://1.bp.blogspot.com/_zZSxcEzfHMc/THr5RAlM9ZI/AAAAAAAAAIs/UfNNqXmxMvw/s1600/PREDIO1.jpg" alt="portrait">
+              <div class="legenda">
+                <div>
+                  <img src="img/elementolegenda.png">
+                </div>
+
+                <div class="txt-imovel-container">
+                  <div class="tipo">Residencial</div>
+                  <div class="nome">Premiatto</div>
+                </div>
+
+              </div>
+
+              <div class="oferta">
+                <div class="desconto-oferta">10%</div>
+                <div class="legenda-oferta">de desconto</div>
+                <div class="botao-oferta center-block">Clique aqui e saiba mais!</div>
+              </div>
+            </a>
+        </div>
+    </div>
+    <!-- anuncio individual-->
+
+  </main><!-- coluna 9 direita -->
+
+</div><!-- corpo -->
+
+<footer class=""><!--row do rodape-->
+  <div id="rodape" class=" col-md-12"><!--rodape-->
+    <div id="rodape-container" class="">
+      <div class="col-md-4 ">
+        REALIZAÇÃO
+          <img width="25%" src="img/aljos2.png">
+          <img width="30%" src="img/teto2.png">
+      </div>
+      <div class="col-md-8 col-xs-12 menu-footer">
+        <img src="img/casa.png">
+        <a href="#myModalReg" role="button" class="btn-rodape" data-toggle="modal">REGULAMENTO</a>
+        &#x25cf;
+        <a href="#myModalTer" role="button" class="btn-rodape" data-toggle="modal">TERMOS E CONDIÇÕES</a>
+        &#x25cf;
+        <a href="#myModalPol" role="button" class="btn-rodape" data-toggle="modal">POLÍTICA DE PRIVACIDADE</a>
+      </div>
+    </div>
+  </div><!--rodape-->
+  <div id="barra-cinza" class=" col-md-12">
+  </div>
+</footer>
+
+
+
+
+
+
+
+<div id="myModalReg" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-md-12">
+            <img class="casamodal" src="img/casamodal.png">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 txtmodal">
+            <h3>Regulamento</h3>
+            Essa é uma área livre para teste. Fique a vontade para testar e examinar o código!
+          </div>
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div class="col-md-12 botoesmodal">
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!-- modal -->
+
+
+
+<!-- modal -->
+<!-- <div id="myModalTer" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      </div>
+
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-md-12">
+            <img class="casamodal" src="img/casamodal.png">
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12 txtmodal">
+          <h3>Termos de Uso</h3>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12 botoesmodal">
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div> -->
+<!-- modal -->
+
+
+          <!-- modal -->
+      <!-- <div id="myModalPol" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+
+              <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+
+            </div>
+            <div class="modal-body">
+
+                <div class="row">
+                    <div class="col-md-12">
+                    <img class="casamodal" src="img/casamodal.png">
+                    </div>
+                </div>
+
+                </div>
+              <div class="row">
+                  <div class="col-md-12 txtmodal">
+                      <h3>Política de Privacidade</h3>
+                  </div>
+              </div>
+
+              <div class="row">
+                  <div class="col-md-12 botoesmodal">
+
+                  </div>
+              </div>
+
+            </div>
+          </div>
+        </div>  -->
+<!-- modal -->
+
+
+
+
+    <script>
+      function outputUpdate(vol) {
+      	document.querySelector('#volume').value ='R$ '+ vol;
+      }
+    </script>
+
+    <!-- //script para remover a div do calendario -->
+    <script>
+      $(document).ready(function(){
+        if (window.outerWidth < 788) {
+            $( "#calendario" ).remove();
+        }
+      });
+    </script>
