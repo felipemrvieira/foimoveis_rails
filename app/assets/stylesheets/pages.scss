@@ -3,7 +3,8 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 @import "bootstrap";
 
-$label-menu-size: 1.2em;
+$label-menu-size: 1em;
+$legend-menu-size: 14px;
 .row{margin: 0;}
 
 @font-face {
@@ -147,7 +148,7 @@ body{
       font-family: Gotham-Light;
       font-style: italic;
       font-weight: normal;
-      font-size: 14px;
+      font-size: $legend-menu-size;
       text-align: right;
       display: inline;
       color:#333;
@@ -158,7 +159,7 @@ body{
 
       output{
         display: inline;
-        font-size: 14px;
+        font-size: $legend-menu-size;
         color:#333;
 
       }
@@ -231,7 +232,7 @@ body{
       box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
     }
     input[type=range]::-ms-fill-upper {
-      background: #3071a9;
+      background: #fff;
       border: 0.2px solid #010101;
       border-radius: 2.6px;
       box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
@@ -360,7 +361,8 @@ body{
     #quartos{
       text-align: left;
       display: inline-block;
-      padding: 0 2px 0 0 ;
+      padding: 0 10px 0 0 ;
+      margin-bottom: 0;
       label{
         font-size: $label-menu-size;
         font-family: Gotham-Bold;
@@ -370,7 +372,7 @@ body{
         float: left;
         font-family: Gotham-Light;
         font-style:italic;
-        font-size: 11px;
+        font-size: $legend-menu-size;
         border-radius: 15px;
         height: 23px;
         padding: 1px 2px;
@@ -381,7 +383,8 @@ body{
     #bairros{
       text-align: left;
       display: inline-block;
-      padding: 0 0 0 2px;
+      padding: 0 0 0 10px;
+      margin-bottom: 0;
       label{
         font-size: $label-menu-size;
         font-family: Gotham-Bold;
@@ -392,7 +395,7 @@ body{
 
         font-family: Gotham-Light;
         font-style:italic;
-        font-size: 11px;
+        font-size: $legend-menu-size;
         border-radius: 15px;
         height: 23px;
         padding: 1px 2px;
@@ -405,8 +408,12 @@ body{
       text-align: left;
       font-family: Gotham-Light;
       font-style:italic;
-      font-size: 13px;
+      font-size: $legend-menu-size;
       margin: 5px 0;
+      .check-item{
+        padding-right: 6px;
+        display: inline-block;
+      }
     }
 
     #botao-filtro-container{
@@ -414,17 +421,15 @@ body{
       padding-right: 0;
       .btnbuscar {
           color: #ffffff;
-          border-radius: 15px;
+          border-radius: 25px;
           text-transform: uppercase;
           font-family: Gotham-Bold;
           font-style: normal;
           background-color: #428BCA;
           background-image: linear-gradient(to bottom, #2b9de9, #2e519b);
           border-color: #2B669A #2B669A #2B669A;
-          transition: all 0.1s ease-out 0s;
           &:hover {
-            color: #ffffff;
-            background: #2e519b;
+            background-image: linear-gradient(to bottom, #2e519b, #2b9de9);
             border-color: #2B669A #2B669A #2B669A;
           }
       }
@@ -449,15 +454,13 @@ body{
       font-family: Gotham-Bold;
       font-style: normal;
       color: #ffffff;
-      border-radius: 35px;
+      border-radius: 55px;
       background-color: #428BCA;
       background-image: linear-gradient(to bottom, #2b9de9, #2e519b);
       border-color: #2B669A #2B669A #2B669A;
-      transition: all 0.1s ease-out 0s;
-
-
       &:hover {
-       background: #2e519b;
+        background-image: linear-gradient(to bottom, #2e519b, #2b9de9);
+        border-color: #2B669A #2B669A #2B669A;
       }
 
       p{
