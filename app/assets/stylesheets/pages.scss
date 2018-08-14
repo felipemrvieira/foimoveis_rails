@@ -3,7 +3,8 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 @import "bootstrap";
 
-
+$label-menu-size: 1.2em;
+.row{margin: 0;}
 
 @font-face {
     font-family: Gotham;
@@ -29,6 +30,62 @@
     font-family: GBold;
     src:font-url('Gotham-Bold.otf');
 }
+.select {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 15px;
+  width: 100%;
+  select {
+    -webkit-box-shadow: inset 3px 5px 6px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset 3px 5px 6px -4px rgba(0,0,0,0.75);
+    box-shadow: inset 3px 5px 6px -4px rgba(0,0,0,0.75);
+    height: 30px;
+    font-size: 14px;
+    display: inline-block;
+    width: 100%;
+    cursor: pointer;
+    padding: 6px 15px;
+    outline: 0;
+    border: 0px hidden #000000;
+    border-radius: 39px;
+    background: #ffffff;
+    color: #000;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    }
+    .select select::-ms-expand {
+      display: none;
+  }
+  select:hover,
+  select:focus {
+      color: #000000;
+      background: #f1f1f1;
+  }
+  select:disabled {
+      opacity: 0.5;
+      pointer-events: none;
+  }
+  .select_arrow {
+    position: absolute;
+    top: 35%;
+    right: 10px;
+    pointer-events: none;
+    border-style: solid;
+    border-width: 8px 5px 0px 5px;
+    border-color: #ffac18 transparent transparent transparent;
+  }
+   select:hover ~ .select_arrow,
+   select:focus ~ .select_arrow {
+    border-top-color: #e2950c;
+  }
+  select:disabled ~ .select_arrow {
+    border-top-color: #CCCCCC;
+  }
+}    
+
+      
+
 
 
 body{
@@ -287,17 +344,48 @@ body{
     #fader{
       background-color: #ef9601;
       height: 20px;
-
-
     }
 
     .labelselect{
-      padding-right: 10px;
+      padding: 0 10px 0 0;
       font-family: Gotham-Bold;
+      display: inline-block;
+      p{
+        text-align: left;
+        margin: 0;
+        font-size: $label-menu-size;
+      }
     }
-    .form-group{
+    
+    #quartos{
       text-align: left;
+      display: inline-block;
+      padding: 0 2px 0 0 ;
+      label{
+        font-size: $label-menu-size;
+        font-family: Gotham-Bold;
+      }
+      .selectfiltro{
+        max-width: 92%;
+        float: left;
+        font-family: Gotham-Light;
+        font-style:italic;
+        font-size: 11px;
+        border-radius: 15px;
+        height: 23px;
+        padding: 1px 2px;
 
+      }
+    }
+
+    #bairros{
+      text-align: left;
+      display: inline-block;
+      padding: 0 0 0 2px;
+      label{
+        font-size: $label-menu-size;
+        font-family: Gotham-Bold;
+      }
       .selectfiltro{
         max-width: 92%;
         float: left;
@@ -311,6 +399,7 @@ body{
 
       }
     }
+
     .check-imovel{
       max-width: 100%;
       text-align: left;

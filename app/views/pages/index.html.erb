@@ -3,37 +3,45 @@
     <%= image_tag "logo2.png", :class => "center-block tamanhomaximo", :id => "logo" %>
     <%= image_tag "elemento.png", :class => "center-block tamanhomaximo", :id => "banner1-aside" %>
 
-    <div class="col-md-12" id="filtro">
-      <div class="col-xs-2 col-md-2 labelselect">
-          Valor:
+    <div class="col-12" id="filtro">
+      <div class=" col-3 labelselect">
+        <p>Valor:</p>
       </div>
-      <div id="valor" class="col-md-10">
+      <div id="valor" class="col-9">
           <p>R$ 100.000 à</p>
           <output class="" for="fader" id="volume">R$ 100.000</output>
       </div>
-      <div class="col-md-12">
+      <div class="col-12">
         <input type="range" min="500" max="4000000" value="100000" id="fader" name="valmax" step="100" oninput="outputUpdate(value)">
       </div>
 
-      <div class="col-xs-12 col-md-6 form-group">
-        <label class=" labelselect" for="qto">Quartos:</label>
-        <select name="qto" class="selectfiltro form-control " id="qto">
-          <option value="0">Sem quarto(Terreno)</option>
-          <option value="1">1 Quarto</option>
-          <option value="2">2 Quartos</option>
-          <option value="3">3 Quartos</option>
-          <option value="4">4 Quartos</option>
-          <option value="5">5 Quartos</option>
-        </select>
+      <div class="col-12 row">
+        <div id="quartos" class="col-6 form-group">
+          <label class=" " for="qto">Quartos:</label>
+          <div class="select">
+            <select name="qto" class=" " id="qto">
+              <option value="0">Sem quarto(Terreno)</option>
+              <option value="1">1 Quarto</option>
+              <option value="2">2 Quartos</option>
+              <option value="3">3 Quartos</option>
+              <option value="4">4 Quartos</option>
+              <option value="5">5 Quartos</option>
+            </select>
+            <div class="select_arrow"></div>
+          </div>
+        </div>
+        <div id="bairros" class="col-6 form-group">
+          <label class=" labelselect" for="bairro">Bairro:</label>
+          <div class="select">
+            <select class=" " id="bairro" name="bairro">
+              <option>Ponta verde</option>
+              <option>Jatiúca</option>
+            </select>
+            <div class="select_arrow"></div>
+          </div>
+        </div>
       </div>
-
-      <div class="col-xs-12 col-md-6 form-group">
-        <label class=" labelselect" for="bairro">Bairro:</label>
-        <select class="selectfiltro form-control " id="bairro" name="bairro">
-          <option>Ponta verde</option>
-          <option>Jatiúca</option>
-        </select>
-      </div>
+      
 
       <div class="col-xs-12 col-md-12 check-imovel ">
 
